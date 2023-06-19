@@ -1,0 +1,22 @@
+{
+  "name": "parcel-deploy",
+  "version": "1.0.0",
+  "description": "parcel-deploy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Allovallo/parcel-deploy.git"
+  },
+  "author": "Allovallo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Allovallo/parcel-deploy/issues"
+  },
+  "homepage": "https://github.com/Allovallo/parcel-deploy#readme",
+  "devDependencies": {
+    "parcel": "^2.9.2"
+  }
+}
