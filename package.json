@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Allovallo/parcel-deploy/issues"
   },
-  "homepage": "https://github.com/Allovallo/parcel-deploy#readme",
+  "homepage": "https://github.com/Allovallo/parcel-deploy",
   "devDependencies": {
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
