@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Allovallo/parcel-deploy#readme",
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "parcel": "^2.9.2"
   }
 }
