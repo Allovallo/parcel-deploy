@@ -35,7 +35,6 @@
     "util": "^0.12.5"
   },
   "dependencies": {
-    "gh-pages": "latest",
     "parcel-plugin-nuke-dist": "^1.0.1"
   }
 }
