@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Allovallo/parcel-deploy/issues"
   },
-  "homepage": "https://github.com/Allovallo/parcel-deploy",
+  "homepage": "https://allovallo.github.io/parcel-deploy/",
   "devDependencies": {
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
@@ -34,7 +34,8 @@
     "stream-browserify": "^3.0.0",
     "util": "^0.12.5"
   },
-  "dependencies": {    
-    "gh-pages": "latest"
+  "dependencies": {
+    "gh-pages": "latest",
+    "parcel-plugin-nuke-dist": "^1.0.1"
   }
 }
