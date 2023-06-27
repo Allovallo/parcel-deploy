@@ -45,14 +45,16 @@
 //   let date1 = new Date(0);
 //   let date2 = new Date();
 
-//   let start = Date.now();
-//   for (let i = 0; i < 100000; i++) f(date1, date2);
-//   return Date.now() - start;
-// }
-
 // console.log(`Time diffSubstract: ${bench(diffSubstract)} mc`);
 // console.log(`Time diffGetTime: ${bench(diffGetTime)} mc`);
 
-let date = new Date('2017-01-26');
-console.log(date);
+// let date = new Date('2017-01-26');
+// console.log(date);
 
+// let ms = Date.parse('2023-05-27T21:09:00');
+// console.log(ms);
+
+// console.log(`Loading started ${performance.now()} ms ago`);
+
+// let date = new Date(2012, 1, 20, 3, 12);
+// console.log(date);
