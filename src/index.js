@@ -58,3 +58,45 @@
 
 // let date = new Date(2012, 1, 20, 3, 12);
 // console.log(date);
+
+// function getWeekDay(date) {
+//     const day = date.getDay();
+//     if (day == 1) {
+//         return 'ПН'
+//     }
+//     else if (day == 2) {
+//         return 'ВТ'
+//     }
+//     else if (day == 3) {
+//         return 'СР'
+//     }
+//     else if (day == 4) {
+//         return 'ЧТ'
+//     }
+//     else if (day == 5) {
+//         return 'ПТ'
+//     }
+//     else if (day == 6) {
+//         return 'СБ'
+//     }
+//     else {
+//         return 'ВС'
+//     };
+// }
+
+// function getWeekDay(date) {
+//     let days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+//     return days[date.getDay()];
+// }
+
+// let date = new Date(2023, 5, 27);
+// console.log(getWeekDay(date));
+
+function getLocalDay(date) {
+    let day = date.getDay();
+    if (day == 0) day = 7;
+    return day;
+}
+
+let date = new Date(2012, 0, 9);
+console.log(getLocalDay(date));
