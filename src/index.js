@@ -139,15 +139,62 @@
 
 // console.log(getSecondsToday());
 
-function getSecondsToday1() {
-    return Math.round((Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000);
-}
-console.log(getSecondsToday1());
+// function getSecondsToday1() {
+//     return Math.round((Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000);
+// }
+// console.log(getSecondsToday1());
 
-function getSecondsToday2() {
-  let now = new Date();
-  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  let diff = now - today; 
-  return Math.round(diff / 1000); 
+
+// function getSecondsToday2() {
+//   let now = new Date();
+//   let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+//   let diff = now - today;
+//   return Math.round(diff / 1000);
+// }
+// console.log( getSecondsToday2() );
+
+// function getSecondsToTomorrow1() {
+//     let tomorrow = new Date();
+//     tomorrow.setDate(tomorrow.getDate() + 1);
+//     tomorrow.setHours(0, 0, 0, 0);
+//     return Math.round((tomorrow - Date.now()) / 1000);
+// }
+
+// console.log(getSecondsToTomorrow1());
+
+// function getSecondsToTomorrow2() {
+//   let now = new Date();
+//   let tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate()+1);
+//   let diff = tomorrow - now;
+//   return Math.round(diff / 1000);
+// }
+
+// console.log(getSecondsToTomorrow2());
+
+function formatDate(date) {
+    let diff = new Date() - date;
+    if (diff < 1000) {
+        return ('right now');
+    }
+
+    let sec = Math.floor(diff / 1000);
+    if (sec < 60) {
+        return sec +' sec ago';
+    }
+
+    let min = Math.floor(diff / 60000);    
+    if (min < 60) {
+        return min + ' min ago';
+    }
+    
+    let d = date;
+    d = ['0' + d.getDate(), '0' + (d.getMonth() + 1), '' + d.getFullYear(), '0' + d.getHours(), '0' + d.getMinutes()
+        ].map(component => component.slice(-2));
+
+    return d.slice(0, 3).join('.') + ' ' + d.slice(3).join(':');
 }
-console.log( getSecondsToday2() );
+
+console.log(formatDate(new Date(new Date - 1)));
+console.log(formatDate(new Date(new Date - 30 * 1000)));
+console.log(formatDate(new Date(new Date - 5 * 60 * 1000)));
+console.log(formatDate(new Date(new Date - 86400 * 1000)));
