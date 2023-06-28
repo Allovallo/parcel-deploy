@@ -111,3 +111,43 @@
 
 // let date = new Date(2015, 0, 2);
 // console.log(getDateAgo(date, 365));
+
+
+// function getLastDayOfMonth(year, month) {
+//     let date = new Date(year, month + 1, 0);
+//     return date.getDate();
+// }
+
+// console.log(getLastDayOfMonth(2012, 1));
+
+// let today = new Date();
+// today.setHours(0, 0, 0, 0);
+
+// console.log(today);
+
+// let end = Date.now();
+
+// console.log(`За сьогодні пройшло ${(end - today) / 1000} cек`);
+
+
+// function getSecondsToday() {
+//     let today = new Date();
+//     today.setHours(0, 0, 0, 0);
+//     let end = Date.now();
+//     return (end - today) / 1000;
+// }
+
+// console.log(getSecondsToday());
+
+function getSecondsToday1() {
+    return Math.round((Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000);
+}
+console.log(getSecondsToday1());
+
+function getSecondsToday2() {
+  let now = new Date();
+  let today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  let diff = now - today; 
+  return Math.round(diff / 1000); 
+}
+console.log( getSecondsToday2() );
